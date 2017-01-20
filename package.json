@@ -38,7 +38,7 @@
   ],
   "dependencies": {
     "get-stdin": "^5.0.1",
-    "get-urls": "^6.0.0",
+    "get-urls": "^7.0.0",
     "meow": "^3.7.0"
   },
   "devDependencies": {

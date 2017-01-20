@@ -19,7 +19,7 @@ const cli = meow(`
 const input = cli.input[0];
 
 function init(data) {
-	console.log(getUrls(data).join('\n'));
+	console.log(Array.from(getUrls(data)).join('\n'));
 }
 
 if (!input && process.stdin.isTTY) {
