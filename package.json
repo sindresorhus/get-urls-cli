@@ -1,0 +1,49 @@
+{
+  "name": "get-urls-cli",
+  "version": "0.0.0",
+  "description": "Get all URLs in a text file or stdin",
+  "license": "MIT",
+  "repository": "sindresorhus/get-urls-cli",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "bin": {
+    "get-urls": "cli.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "get",
+    "urls",
+    "url",
+    "uri",
+    "extract",
+    "find",
+    "scrape",
+    "text",
+    "string",
+    "file",
+    "stdin"
+  ],
+  "dependencies": {
+    "get-stdin": "^5.0.1",
+    "get-urls": "^6.0.0",
+    "meow": "^3.7.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "execa": "^0.6.0",
+    "xo": "*"
+  }
+}
