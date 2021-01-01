@@ -1,4 +1,4 @@
-# get-urls-cli [![Build Status](https://travis-ci.org/sindresorhus/get-urls-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/get-urls-cli)
+# get-urls-cli
 
 > Get all URLs in a text file or stdin
 
