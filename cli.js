@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-'use strict';
-const fs = require('fs');
-const meow = require('meow');
-const stdin = require('get-stdin');
-const getUrls = require('get-urls');
+import process from 'node:process';
+import fs from 'node:fs';
+import meow from 'meow';
+import stdin from 'get-stdin';
+import getUrls from 'get-urls';
 
 const cli = meow(`
 	Usage
@@ -14,12 +14,14 @@ const cli = meow(`
 	  $ get-urls file.txt
 	  https://sindresorhus.com
 	  https://github.com
-`);
+`, {
+	importMeta: import.meta,
+});
 
 const input = cli.input[0];
 
 function init(data) {
-	console.log(Array.from(getUrls(data)).join('\n'));
+	console.log([...getUrls(data)].join('\n'));
 }
 
 if (!input && process.stdin.isTTY) {
@@ -30,5 +32,5 @@ if (!input && process.stdin.isTTY) {
 if (input) {
 	init(fs.readFileSync(input, 'utf8'));
 } else {
-	stdin().then(init);
+	init(await stdin());
 }

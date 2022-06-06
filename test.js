@@ -1,10 +1,10 @@
-import fs from 'fs';
+import fs from 'node:fs';
 import test from 'ava';
-import execa from 'execa';
+import {execa} from 'execa';
 
 const expected = [
 	'https://sindresorhus.com',
-	'http://example.com'
+	'http://example.com',
 ].join('\n');
 
 test('main', async t => {
@@ -14,7 +14,8 @@ test('main', async t => {
 
 test('stdin', async t => {
 	const {stdout} = await execa('./cli.js', {
-		input: fs.readFileSync('fixture.txt')
+		input: fs.readFileSync('fixture.txt'),
 	});
+
 	t.is(stdout, expected);
 });

@@ -2,13 +2,11 @@
 
 > Get all URLs in a text file or stdin
 
-
 ## Install
 
+```sh
+npm install --global get-urls-cli
 ```
-$ npm install --global get-urls-cli
-```
-
 
 ## Usage
 
@@ -25,12 +23,6 @@ $ get-urls --help
     https://github.com
 ```
 
-
 ## Related
 
 - [get-urls](https://github.com/sindresorhus/get-urls) - API for this module
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

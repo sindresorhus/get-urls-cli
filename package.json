@@ -1,49 +1,51 @@
 {
-  "name": "get-urls-cli",
-  "version": "1.1.0",
-  "description": "Get all URLs in a text file or stdin",
-  "license": "MIT",
-  "repository": "sindresorhus/get-urls-cli",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "bin": {
-    "get-urls": "cli.js"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "cli.js"
-  ],
-  "keywords": [
-    "cli-app",
-    "cli",
-    "get",
-    "urls",
-    "url",
-    "uri",
-    "extract",
-    "find",
-    "scrape",
-    "text",
-    "string",
-    "file",
-    "stdin"
-  ],
-  "dependencies": {
-    "get-stdin": "^5.0.1",
-    "get-urls": "^7.0.0",
-    "meow": "^3.7.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "execa": "^0.6.0",
-    "xo": "*"
-  }
+	"name": "get-urls-cli",
+	"version": "1.1.0",
+	"description": "Get all URLs in a text file or stdin",
+	"license": "MIT",
+	"repository": "sindresorhus/get-urls-cli",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"type": "module",
+	"bin": {
+		"get-urls": "cli.js"
+	},
+	"engines": {
+		"node": ">=14.16"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"get",
+		"urls",
+		"url",
+		"uri",
+		"extract",
+		"find",
+		"scrape",
+		"text",
+		"string",
+		"file",
+		"stdin"
+	],
+	"dependencies": {
+		"get-stdin": "^9.0.0",
+		"get-urls": "^11.0.0",
+		"meow": "^10.1.2"
+	},
+	"devDependencies": {
+		"ava": "^4.3.0",
+		"execa": "^6.1.0",
+		"xo": "^0.49.0"
+	}
 }
